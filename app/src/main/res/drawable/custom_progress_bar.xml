@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dolu kısmı temsil eden ilerleme çubuğu -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dp" />
+            <solid android:color="#D3D3D3" />
+        </shape>
+    </item>
+
+    <!-- İlerleme kısmı -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dp" />
+                <solid android:color="#00FF00" /> <!-- İlerleme rengi, burayı istediğiniz renge ayarlayabilirsiniz -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
