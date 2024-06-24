@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/iconrenk"
+    android:backgroundTint="@color/iconrenk"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_guncelsikayet"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/buttonrenk"
+        android:text="GÜNCEL ŞİKAYETLER"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_ihbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="339dp"
+        android:layout_height="284dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_resimsec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_ihbarresim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btn_resimsec"
+        android:layout_width="112dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="280dp"
+        android:background="@color/buttonrenk"
+        android:backgroundTint="@color/buttonrenk"
+        android:text="Resim Seç"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ihbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ihbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_resimsec"
+        app:layout_constraintVertical_bias="0.461">
+
+        <EditText
+            android:id="@+id/edittxt_sikayet"
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:gravity="top"
+            android:hint="Şikayetinizi buraya yazınız..."
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_ihbar"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/buttonrenk"
+        android:text="İHBAR ET"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_guncelsikayet"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
