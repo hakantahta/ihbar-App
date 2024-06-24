@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "687716719842",
+    "project_id": "ihbar-9374c",
+    "storage_bucket": "ihbar-9374c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687716719842:android:95138f81954d1d917092bb",
+        "android_client_info": {
+          "package_name": "com.example.ihbar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxvFo4OkmdWmtxKevlJWVOZMYHUs47KoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

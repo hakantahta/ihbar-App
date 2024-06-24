@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1F41"
+    tools:context=".SplashActivity">
+
+    <!-- Splash screen için uygun bir görsel veya logo ekleyebilirsiniz -->
+    <ImageView
+        android:id="@+id/imageViewSplash"
+        android:layout_width="214dp"
+        android:layout_height="354dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"></ImageView>
+
+    <!-- İlerleme çubuğu için bir yatay ProgressBar ekleme -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:background="#0F1F41"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar" /> <!-- Özel ilerleme çubuğu görünümünü burada belirtin -->
+
+
+
+</RelativeLayout>
